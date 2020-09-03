@@ -59,6 +59,9 @@ header {
 
 nav {
   flex: 2;
+  transform: scale(0, 1);
+  transform-origin: bottom;
+  transition: transform 400ms ease-in-out;
 }
 
 .logreg {
@@ -84,9 +87,40 @@ nav li a {
   color: #000;
 }
 
+.hamburger {
+  width: 40px;
+  cursor: pointer;
+}
+
+.nav-toggle {
+  z-index: 1000;
+  display: none;
+}
+
+.nav-toggle-label {
+  position: absolute;
+  background: #ffbb0c;
+  border-radius: 5px;
+  top: 10px;
+  right: 0%;
+  margin-right: 1em;
+  height: 40px;
+  margin-top: 6px;
+  z-index: 100;
+}
+
+.nav-toggle:checked ~ nav {
+  transform: scale(1, 1);
+}
+
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  /* transition: opacity 250ms ease-in-out 250ms; */
+}
+
 #showcase {
   /* position: relative; */
-  width: 90%;
+  width: 80%;
   height: 90vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -144,7 +178,7 @@ nav li a {
   width: 100%;
 }
 
-.input-1 i {
+/* .input-1 i {
   position: absolute;
   bottom: 38%;
   left: 42%;
@@ -168,7 +202,7 @@ nav li a {
   bottom: 25.5%;
   left: 24%;
   color: #333;
-}
+} */
 
 .showcase-text a {
   width: 50%;
@@ -281,7 +315,7 @@ nav li a {
 
 #new-way .circle-5 {
   position: absolute;
-  z-index: -2;
+  z-index: 10;
   bottom: 0px;
   right: 20%;
   height: 20px;
@@ -292,7 +326,7 @@ nav li a {
 }
 #new-way .circle-6 {
   position: absolute;
-  z-index: -2;
+  z-index: 10;
   bottom: 0px;
   right: 20%;
   height: 20px;
@@ -422,7 +456,7 @@ nav li a {
 #testimonial {
   position: relative;
   width: 90%;
-  height: 20vh;
+  height: 60vh;
   margin: auto;
   margin-bottom: 17rem;
 }
@@ -537,14 +571,14 @@ nav li a {
 
 #trending {
   /* background: red; */
-  position: absolute;
-  width: 90%;
-  height: 70vh;
+  position: relative;
+  width: 85%;
+  height: 100vh;
   margin: auto;
-  margin-top: 17rem;
-  margin-bottom: 10rem;
-  margin-left: 5rem;
-  padding: 0rem 6rem;
+  /* margin-top: 17rem; */
+  /* margin-bottom: 10rem; */
+  /* margin-left: 5rem; */
+  /* padding: 0rem 6rem; */
 }
 
 .trending-text {
@@ -571,17 +605,18 @@ nav li a {
 
 .trending-card-container {
   margin: auto;
-  position: absolute;
+  /* position: relative; */
 }
 
 .trending-card-container .cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  margin: auto;
   max-width: 100%;
 }
 
 .trending-card-container .card-text {
-  background: #fff;
+  /* background: #fff; */
   font-family: "Raleway", sans-serif;
   /* position: relative; */
   /* width: 120px; */
@@ -607,18 +642,19 @@ nav li a {
 
 .trending-card-container .card-3 h3,
 .trending-card-container .card-4 h3 {
-  width: 100%;
+  width: 90%;
 }
 
 .trending-card-container .card-img img {
   /* position: relative; */
   width: 250px;
   height: 300px;
+  border-radius: 10px;
 }
 
 #footer {
-  position: absolute;
-  margin-top: 60rem;
+  position: relative;
+  /* margin-top: 10rem; */
   background: #f9f9fb;
   height: 60vh;
   width: 100%;
@@ -628,11 +664,13 @@ nav li a {
 #footer .footer-top {
   display: grid;
   grid-template-columns: 40% repeat(3, 1fr);
+  margin: auto;
+  width: 90%;
 }
 
-.f-logo-container {
+/* .f-logo-container {
   margin-left: 6rem;
-}
+} */
 
 .f-logo-container h4 {
   width: 60%;
@@ -662,6 +700,9 @@ nav li a {
 }
 
 #footer .footer-icons ul {
+  /* background: red; */
+  padding: 2rem;
+
   display: flex;
   justify-content: center;
 }

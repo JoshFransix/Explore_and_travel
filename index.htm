@@ -9,7 +9,8 @@
       integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
     <title>Thousand Sunny | Explore and Travel</title>
   </head>
   <body>
@@ -17,6 +18,7 @@
       <div class="logo">
         <a href="#"><img src="./img/logo.png" alt="logo" /></a>
       </div>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
 
       <nav>
         <ul class="nav-links">
@@ -26,12 +28,49 @@
           <li><a href="#">Partner</a></li>
         </ul>
       </nav>
-      <div class="logreg">
-        <ul class="nav-links">
-          <li class="nav-btn"><a class="btn-light" href="#">Login</a></li>
-          <li class="nav-btn"><a class="btn-dark" href="#">Register</a></li>
-        </ul>
-      </div>
+          <div class="logreg">
+            <ul class="nav-links">
+              <li class="nav-btn"><a class="btn-light" href="#">Login</a></li>
+              <li class="nav-btn"><a class="btn-dark" href="#">Register</a></li>
+            </ul>
+          </div>
+                <label for="nav-toggle" class="nav-toggle-label">
+                  <svg class="hamburger" viewBox="0 0 100 100">
+                    <line
+                    class="line-one"
+                      x1="25"
+                      y1="42"
+                      x2="75"
+                      y2="42"
+                      fill="none"
+                      stroke="#fff"
+                      stroke-miterlimit="10"
+                      stroke-width="4"
+                    />
+                    <line
+                      class="line-two"
+                      x1="25"
+                      y1="57"
+                      x2="75"
+                      y2="57"
+                      fill="none"
+                      stroke="#fff"
+                      stroke-miterlimit="10"
+                      stroke-width="4"
+                      />
+                    <line
+                      class="line-three"
+                      x1="25"
+                      y1="72"
+                      x2="75"
+                      y2="72"
+                      fill="none"
+                      stroke="#fff"
+                      stroke-miterlimit="10"
+                      stroke-width="4"
+                    />
+                  </svg>
+                </label>
     </header>
 
     <section id="showcase">
@@ -143,7 +182,7 @@
     <section id="guide">
       <div class="guide-content">
         <div class="guide-text">
-          <h1>A new way to explore the world</h1>
+          <h1>Guide to explore the world</h1>
           <p>
             For decades travellers have reached for Lonely Planet books when
             looking to plan and execute their perfect trip, but now, they can
@@ -311,5 +350,8 @@
     </ul>
   </div>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.4/gsap.min.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>

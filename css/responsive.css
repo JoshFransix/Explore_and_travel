@@ -1,0 +1,532 @@
+@media screen and (max-width: 1280px) {
+  header {
+    width: 90%;
+  }
+
+  #showcase {
+    width: 90%;
+  }
+
+  .showcase-text .line {
+    display: none;
+  }
+
+  #featured {
+    width: 100%;
+    padding: 0rem 3rem;
+  }
+
+  #trending {
+    width: 90%;
+    padding: 0rem 0rem;
+    margin-left: 3rem;
+  }
+
+  .trending-card-container .cards {
+    grid-gap: 0rem 1rem;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .logo {
+    flex: 1;
+    width: 100%;
+  }
+  #new-way {
+    width: 100%;
+  }
+  #featured {
+    width: 80%;
+    height: 100%;
+    /* margin: auto; */
+  }
+
+  #featured .cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem 1rem;
+    margin: auto;
+    max-width: 100%;
+  }
+
+  #featured .cards .card {
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 1px 15px 15px rgba(0, 0, 0, 0.3);
+  }
+  #guide {
+    height: 30vh;
+    width: 100%;
+  }
+
+  #trending {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 7rem;
+    height: 100%;
+  }
+  .trending-card-container .cards {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+    grid-gap: 6rem 5rem;
+  }
+
+  .trending-card-container .cards .card-1,
+  .trending-card-container .cards .card-2,
+  .trending-card-container .cards .card-3,
+  .trending-card-container .cards .card-4 {
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 1px 15px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  #footer {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .showcase-text a {
+    width: 70%;
+    text-align: center;
+  }
+
+  .showcase-img img {
+    position: relative;
+    width: 100%;
+    height: 550px;
+  }
+
+  #featured {
+    width: 90%;
+    height: 100%;
+  }
+
+  #featured .fh-text h2 {
+    flex: 6;
+  }
+
+  .testimonial-img img {
+    position: relative;
+    width: 400px;
+    height: 400px;
+  }
+
+  .testimonial-icon {
+    width: 140px;
+    bottom: 13%;
+    left: 60%;
+  }
+
+  .guide-img img {
+    position: relative;
+    width: 100%;
+    height: 450px;
+  }
+
+  .new-way-img img {
+    position: relative;
+    width: 100%;
+    height: 450px;
+  }
+
+  #footer {
+    padding: 2rem;
+    height: 100%;
+    font-size: 80%;
+  }
+
+  #footer .footer-top ul li {
+    line-height: 3;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .nav-toggle-label {
+    display: none;
+  }
+
+  nav {
+    transition: none;
+    transform: scale(1, 1);
+  }
+
+  nav a::before {
+    content: "";
+    transform: scale(0, 1);
+    transition: transform ease-in-out 250ms;
+  }
+
+  nav a:hover::before {
+    transform: scale(1, 1);
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .nav-toggle:checked ~ nav {
+    transform: scale(1, 1);
+  }
+
+  header {
+    z-index: 100;
+  }
+
+  nav {
+    position: fixed;
+    right: 0%;
+    background: #dffffa;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0.3);
+    top: 0%;
+    height: 100%;
+    width: 50%;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 5%;
+    left: 0%;
+    text-align: center;
+    font-size: 120%;
+  }
+
+  nav ul li {
+    line-height: 5;
+    display: block;
+  }
+
+  .logreg {
+    flex: 4;
+    font-size: 100%;
+  }
+
+  .showcase-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.4;
+  }
+
+  .showcase-text h1 {
+    width: 80%;
+    font-size: 200%;
+    margin: 1rem 0;
+  }
+
+  .showcase-text h3 {
+    font-size: 100%;
+  }
+
+  .input-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+  }
+
+  .input-container input {
+    padding: 0.5rem;
+    width: 50%;
+  }
+
+  .showcase-text a {
+    width: 50%;
+  }
+
+  .showcase-img img {
+    position: relative;
+    top: 20%;
+    width: 100%;
+    height: 60%;
+  }
+
+  .new-way-text {
+    max-width: 85%;
+    margin-left: 1rem;
+  }
+
+  .new-way-text h1 {
+    font-size: 200%;
+  }
+  .new-way-text p {
+    font-size: 90%;
+  }
+
+  .new-way-img img {
+    width: 90%;
+    height: 350px;
+  }
+
+  #guide {
+    height: 3vh;
+  }
+  .guide-text {
+    max-width: 85%;
+    margin-left: 2rem;
+  }
+
+  .guide-text h1 {
+    font-size: 200%;
+  }
+  .guide-text p {
+    font-size: 90%;
+  }
+
+  .guide-img img {
+    width: 90%;
+    height: 350px;
+  }
+
+  #guide .circle-5 {
+    z-index: 10;
+    bottom: 0%;
+    right: 10%;
+  }
+  #guide .circle-6 {
+    z-index: 10;
+    bottom: 0%;
+    right: 10%;
+  }
+
+  #featured {
+    width: 100%;
+  }
+
+  #featured .fh-text h2 {
+    flex: 70%;
+    font-size: 150%;
+  }
+
+  #featured .fh-text a {
+    font-size: 100%;
+  }
+
+  #featured .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #testimonial {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    margin-bottom: 14rem;
+  }
+
+  .testimonial-content {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+  }
+
+  .testimonial-text {
+    max-width: 90%;
+    margin-left: 0rem;
+  }
+
+  .testimonial-text h1 {
+    font-size: 150%;
+  }
+
+  .testimonial-text p {
+    font-size: 80%;
+  }
+
+  .testimonial-img img {
+    position: relative;
+    width: 400px;
+    height: 400px;
+  }
+
+  .testimonial-icon {
+    width: 140px;
+    bottom: 13%;
+    left: 60%;
+  }
+
+  .trending-text h2 {
+    flex: 70%;
+    font-size: 150%;
+  }
+
+  .trending-text a {
+    font-size: 100%;
+  }
+
+  .trending-card-container .cards {
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 100%;
+    grid-gap: 6rem 5rem;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  #featured .fh-text h2 {
+    flex: 50%;
+    font-size: 120%;
+  }
+
+  #featured .fh-text a {
+    font-size: 100%;
+  }
+
+  .testimonial-img img {
+    position: relative;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+  }
+
+  .testimonial-icon {
+    width: 140px;
+    bottom: 10%;
+    left: 20%;
+  }
+
+  #trending .trending-text h2 {
+    flex: 50%;
+    font-size: 120%;
+  }
+
+  #trending .trending-text a {
+    font-size: 100%;
+  }
+
+  #footer .footer-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+  }
+
+  .f-logo-container h4 {
+    width: 100%;
+  }
+
+  .f-logo-container h5 {
+    margin: 2rem 0;
+    width: 100%;
+  }
+
+  #footer hr {
+    margin: 4rem 2rem 2rem 2rem;
+    width: 80%;
+  }
+}
+
+@media screen and (max-height: 1799px) {
+  nav {
+    width: 100%;
+    height: 100%;
+    font-size: 200%;
+  }
+  .logreg {
+    display: none;
+  }
+
+  #showcase::before {
+    position: relative;
+    top: 0;
+    left: 0;
+    content: "";
+    background: url(../img/hero-1.png) no-repeat center center/cover;
+  }
+  #showcase {
+    /* position: relative; */
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 0.5rem;
+  }
+
+  .showcase-text h1 {
+    width: 100%;
+    font-size: 300%;
+    margin: 1rem 0rem;
+  }
+
+  .showcase-text h3 {
+    font-size: 200%;
+  }
+
+  .input-container input {
+    padding: 1rem;
+    width: 70%;
+    font-size: 150%;
+  }
+
+  .showcase-text a {
+    width: 50%;
+    font-size: 200%;
+    margin-top: 4rem;
+  }
+
+  .showcase-img img {
+    display: none;
+  }
+  #new-way {
+    position: relative;
+    height: 40vh;
+    width: 90%;
+  }
+
+  .new-way-content {
+    /* position: relative; */
+    grid-template-columns: repeat(1, 1fr);
+    font-size: 200%;
+  }
+
+  .new-way-img img {
+    display: none;
+  }
+
+  #guide {
+    height: 30vh;
+  }
+  .guide-content {
+    /* position: relative; */
+    grid-template-columns: repeat(1, 1fr);
+    font-size: 200%;
+  }
+
+  .guide-img img {
+    display: none;
+  }
+
+  #featured {
+    width: 90%;
+    padding: 0 1rem;
+    height: 130vh;
+  }
+  #featured .fh-text h2 {
+    flex: 50%;
+    font-size: 200%;
+  }
+
+  #featured .fh-text a {
+    font-size: 150%;
+  }
+
+  #trending {
+    width: 90%;
+  }
+
+  #footer .footer-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+  }
+
+  .f-logo-container h4 {
+    width: 100%;
+  }
+
+  .f-logo-container h5 {
+    margin: 2rem 0;
+    width: 100%;
+  }
+
+  #footer hr {
+    margin: 4rem 2rem 2rem 2rem;
+    width: 80%;
+  }
+}
