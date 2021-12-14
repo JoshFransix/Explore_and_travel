@@ -9,68 +9,38 @@
       integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/responsive.css" />
+   <link rel="stylesheet" href="./css/styles.css">
     <title>Thousand Sunny | Explore and Travel</title>
   </head>
   <body>
-    <header>
+    <header id="header">
       <div class="logo">
         <a href="#"><img src="./img/logo.png" alt="logo" /></a>
       </div>
-      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      
 
       <nav>
+        <div class="hamburger">
+          <div class="line line1"></div>
+          <div class="line line2"></div>
+          <div class="line line3"></div>
+        </div>
         <ul class="nav-links">
-          <li><a class="active" href="#">Home</a></li>
-          <li><a href="#">Destination</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Partner</a></li>
+          <li class="nav-item"><a class="active" href="#">Home</a></li>
+          <li class="nav-item"><a href="#new-way">About</a></li>
+          <li class="nav-item"><a href="#featured">Destination</a></li>
+          <li class="nav-item"><a href="#guide">Guide</a></li>
+          <li class="nav-item"><a href="#testimonial">Testimonials</a></li>
+          <li class="nav-item"><a href="#trending">Trending</a></li>
         </ul>
       </nav>
-          <div class="logreg">
-            <ul class="nav-links">
+          
+            <ul class="logreg">
               <li class="nav-btn"><a class="btn-light" href="#">Login</a></li>
               <li class="nav-btn"><a class="btn-dark" href="#">Register</a></li>
             </ul>
-          </div>
-                <label for="nav-toggle" class="nav-toggle-label">
-                  <svg class="hamburger" viewBox="0 0 100 100">
-                    <line
-                    class="line-one"
-                      x1="25"
-                      y1="42"
-                      x2="75"
-                      y2="42"
-                      fill="none"
-                      stroke="#fff"
-                      stroke-miterlimit="10"
-                      stroke-width="4"
-                    />
-                    <line
-                      class="line-two"
-                      x1="25"
-                      y1="57"
-                      x2="75"
-                      y2="57"
-                      fill="none"
-                      stroke="#fff"
-                      stroke-miterlimit="10"
-                      stroke-width="4"
-                      />
-                    <line
-                      class="line-three"
-                      x1="25"
-                      y1="72"
-                      x2="75"
-                      y2="72"
-                      fill="none"
-                      stroke="#fff"
-                      stroke-miterlimit="10"
-                      stroke-width="4"
-                    />
-                  </svg>
-                </label>
+        
+
     </header>
 
     <section id="showcase">
@@ -139,39 +109,39 @@
 
       <div class="card-container">
         <div class="cards">
-          <div class="card">
+          <div class="card" title="Raja Ampat">
             <div class="card-img">
               <img src="./img/destination-1.png" alt="" />
             </div>
             <div class="card-text">
-              <h3>Raja Ampat</h3>
+              <h3 >Raja Ampat</h3>
               <h4>Indonesia</h4>
             </div>
           </div>
-          <div class="card">
+          <div class="card" title="Fanjingshan">
             <div class="card-img">
               <img src="./img/destination-2.png" alt="" />
             </div>
             <div class="card-text">
-              <h3>Fanjingshan</h3>
+              <h3 >Fanjingshan</h3>
               <h4>China</h4>
             </div>
           </div>
-          <div class="card">
+          <div class="card" title="Vevey">
             <div class="card-img">
               <img src="./img/destination-3.png" alt="" />
             </div>
             <div class="card-text">
-              <h3>Vevey</h3>
+              <h3 >Vevey</h3>
               <h4>Switzerland</h4>
             </div>
           </div>
-          <div class="card">
+          <div class="card" title="Skadar">
             <div class="card-img">
               <img src="./img/destination-4.png" alt="" />
             </div>
             <div class="card-text">
-              <h3>Skadar</h3>
+              <h3 >Skadar</h3>
               <h4>Montenegro</h4>
             </div>
           </div>
@@ -223,10 +193,10 @@
           <div class="testimonial-img">
             <img src="./img/selfie.png" alt="selfie" />
           </div>
-          <div class="testimonial-icon">
+          <!-- <div class="testimonial-icon">
             <a href="#"><i class="fas fa-angle-left"></i></a
             ><a href="#"><i class="fas fa-angle-right"></i></a>
-          </div>
+          </div> -->
         </div>
 
         <div class="circle-9"></div>

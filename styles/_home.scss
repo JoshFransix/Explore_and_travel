@@ -1,48 +1,29 @@
-@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Poppins&family=Raleway:wght@500&family=Roboto&display=swap");
-:root {
-  --primary-color: #fb8f1d;
-}
+// header {
+//   display: flex;
+//   position: relative;
+//   width: 90%;
+//   margin: auto;
+//   align-items: center;
+//   height: 10vh;
+// }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-}
-
-.btn-light {
-  background: #fff;
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
-  border-radius: 10px;
-  padding: 0.5rem 2rem;
-}
-.btn-dark {
-  background: var(--primary-color);
-  color: #fff;
-  border: 1px solid var(--primary-color);
-  border-radius: 10px;
-  padding: 0.5rem 2rem;
-}
-
-header {
+#header {
   display: flex;
-  position: relative;
-  width: 80%;
-  margin: auto;
   align-items: center;
   height: 10vh;
+  width: 100vw;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  padding: 0 4rem;
+  z-index: 1000;
+  transition: all 0.6s;
+}
+
+#header.sticky {
+  background: linear-gradient(#dffffa, #ddd);
+  box-shadow: 3px 3px 50px rgba(0, 0, 0, 0.3);
+  // transition: background-color 0.3s ease-in-out;
 }
 
 .logo,
@@ -58,15 +39,15 @@ header {
 }
 
 nav {
-  flex: 2;
-  transform: scale(0, 1);
-  transform-origin: bottom;
-  transition: transform 400ms ease-in-out;
+  flex: 3;
+  // transform: scale(0, 1);
+  // transform-origin: bottom;
+  // transition: transform 400ms ease-in-out;
 }
 
 .logreg {
-  flex: 1;
   display: flex;
+  flex: 1;
 }
 
 .nav-btn {
@@ -87,63 +68,36 @@ nav li a {
   color: #000;
 }
 
-.hamburger {
-  width: 40px;
-  cursor: pointer;
-}
-
-.nav-toggle {
-  z-index: 1000;
-  display: none;
-}
-
-.nav-toggle-label {
-  position: absolute;
-  background: #ffbb0c;
-  border-radius: 5px;
-  top: 10px;
-  right: 0%;
-  margin-right: 1em;
-  height: 40px;
-  margin-top: 6px;
-  z-index: 100;
-}
-
-.nav-toggle:checked ~ nav {
-  transform: scale(1, 1);
-}
-
-.nav-toggle:checked ~ nav a {
-  opacity: 1;
-  /* transition: opacity 250ms ease-in-out 250ms; */
-}
-
 #showcase {
   /* position: relative; */
   width: 80%;
-  height: 90vh;
+  height: 80vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: auto;
-  margin-top: 2rem;
+  margin-top: 7rem;
 }
 
 .showcase-content {
   /* position: absolute; */
-  margin: auto;
+  // margin: auto;
+  width: 80%;
 }
 
 .showcase-text {
+  position: relative;
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   line-height: 1.4;
+  width: 100%;
 }
 
 .showcase-text h1 {
   font-family: "Raleway", sans-serif;
   width: 90%;
-  font-size: 3rem;
+  font-size: 250%;
   text-transform: uppercase;
   margin: 1rem 0;
 }
@@ -158,8 +112,8 @@ nav li a {
   position: absolute;
   width: 32px;
   height: 2px;
-  left: 13%;
-  top: 450px;
+  left: 0px;
+  top: 38%;
 
   background: #202336;
   border-radius: 10px;
@@ -175,7 +129,17 @@ nav li a {
   padding: 1rem;
   border-radius: 10px;
   border: 1px solid #ddd;
+  outline: none;
   width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.input-container input:hover,
+.input-container input:focus {
+  border: 1px solid;
+  border-color: #dffffa;
+  box-shadow: 0px 0px 10px #3de6cc;
+  transition: all 0.3s ease-in-out;
 }
 
 /* .input-1 i {
@@ -205,14 +169,16 @@ nav li a {
 } */
 
 .showcase-text a {
-  width: 50%;
+  display: flex;
+  justify-content: center;
+  width: 70%;
   text-align: center;
 }
 
 .showcase-img img {
   position: relative;
-  width: 90%;
-  height: 550px;
+  width: 100%;
+  height: 100%;
 }
 
 /* #showcase svg {
@@ -282,12 +248,14 @@ nav li a {
 #new-way {
   position: relative;
   width: 90%;
-  height: 50vh;
+  height: 100%;
+  // margin-top: 0;
+  padding-top: 7rem;
   margin: auto;
 }
 
 .new-way-content {
-  position: absolute;
+  // position: absolute;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: auto;
@@ -299,18 +267,22 @@ nav li a {
   justify-content: center;
   text-align: left;
   line-height: 2;
-  max-width: 70%;
+  width: 70%;
   margin-left: 6rem;
 }
 
 .new-way-text h1 {
-  font-size: 2rem;
+  font-size: 180%;
+}
+.new-way-text p {
+  font-size: 100%;
+  color: #222;
 }
 
 .new-way-img img {
   position: relative;
   width: 90%;
-  height: 550px;
+  height: 100%;
 }
 
 #new-way .circle-5 {
@@ -337,42 +309,34 @@ nav li a {
 }
 
 #featured {
-  /* background: red; */
-  /* position: absolute; */
-  width: 90%;
-  height: 40vh;
   margin: auto;
-  margin-top: 17rem;
-  margin-bottom: 10rem;
-  padding: 0rem 6rem;
+  width: 80%;
+  height: 100%;
+  margin-top: 8rem;
+  padding-top: 15rem;
 }
 
 #featured .fh-text {
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: auto;
   margin-bottom: 2rem;
-}
-
-#featured .fh-text h2 {
-  flex: 8;
+  width: 93%;
 }
 
 #featured .fh-text a {
-  flex: 1;
   color: var(--primary-color);
-}
-
-#featured .card-container {
-  margin: auto;
 }
 
 #featured .cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   max-width: 100%;
+}
+
+#featured .cards .card {
+  cursor: pointer;
 }
 
 #featured .card-text {
@@ -389,22 +353,33 @@ nav li a {
 }
 
 #featured .card-img img {
+  user-select: all;
+  pointer-events: all;
   position: relative;
-  width: 250px;
+  width: 80%;
   height: 300px;
   border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+#featured .card-img img:hover {
+  width: 90%;
+  height: 350px;
+  transition: all 0.3s ease-in-out;
 }
 
 #guide {
   position: relative;
   width: 90%;
-  height: 10vh;
+  height: 100%;
   margin: auto;
-  margin-bottom: 40rem;
+  // margin-bottom: 40rem;
+  margin-top: 10rem;
+  padding-top: 5rem;
 }
 
 .guide-content {
-  position: absolute;
+  // position: absolute;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: auto;
@@ -456,9 +431,10 @@ nav li a {
 #testimonial {
   position: relative;
   width: 90%;
-  height: 60vh;
+  height: 100%;
   margin: auto;
-  margin-bottom: 17rem;
+  margin-top: 10rem;
+  padding-top: 10rem;
 }
 
 .testimonial-content {
@@ -474,7 +450,7 @@ nav li a {
   justify-content: flex-start;
   text-align: left;
   line-height: 2;
-  max-width: 70%;
+  width: 70%;
   margin-left: 6rem;
   margin-top: 0rem;
 }
@@ -485,8 +461,8 @@ nav li a {
 
 .testimonial-img img {
   position: relative;
-  width: 600px;
-  height: 500px;
+  width: 90%;
+  height: 100%;
   border-radius: 30px;
 }
 
@@ -573,25 +549,20 @@ nav li a {
   /* background: red; */
   position: relative;
   width: 85%;
-  height: 100vh;
+  height: 100%;
   margin: auto;
-  /* margin-top: 17rem; */
-  /* margin-bottom: 10rem; */
-  /* margin-left: 5rem; */
-  /* padding: 0rem 6rem; */
+  margin-top: 8rem;
+  padding-top: 9rem;
 }
 
 .trending-text {
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: auto;
   margin-bottom: 2rem;
-}
-
-.trending-text h2 {
-  flex: 8;
+  width: 92%;
 }
 
 .card-link {
@@ -599,7 +570,7 @@ nav li a {
 }
 
 .trending-text a {
-  flex: 1;
+  // flex: 1;
   color: var(--primary-color);
 }
 
@@ -612,7 +583,7 @@ nav li a {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin: auto;
-  max-width: 100%;
+  width: 100%;
 }
 
 .trending-card-container .card-text {
@@ -635,7 +606,7 @@ nav li a {
   color: #777;
   font-size: 15px;
   font-family: "Roboto", sans-serif;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   line-height: 2;
   width: 80%;
 }
@@ -656,16 +627,19 @@ nav li a {
   position: relative;
   /* margin-top: 10rem; */
   background: #f9f9fb;
-  height: 60vh;
+  height: 100%;
   width: 100%;
-  padding: 3rem;
+  margin: auto;
+  // padding: 3rem;
+  margin-top: 8rem;
+  padding-top: 3rem;
 }
 
 #footer .footer-top {
   display: grid;
   grid-template-columns: 40% repeat(3, 1fr);
   margin: auto;
-  width: 90%;
+  width: 80%;
 }
 
 /* .f-logo-container {
@@ -676,10 +650,12 @@ nav li a {
   width: 60%;
   margin-top: 1rem;
   line-height: 1.9;
+  font-size: 100%;
 }
 
 .f-logo-container h5 {
   margin-top: 3rem;
+  font-size: 80%;
 }
 
 #footer .footer-top ul {
@@ -695,7 +671,8 @@ nav li a {
 }
 
 #footer hr {
-  margin: 4rem 7rem 2rem 7rem;
+  margin: auto;
+  margin-top: 2rem;
   width: 80%;
 }
 
