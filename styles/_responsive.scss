@@ -1,6 +1,7 @@
 @media screen and (max-width: 1280px) {
   #header {
     width: 100%;
+    height: 10vh;
     padding: 0 2rem;
   }
 
@@ -67,7 +68,7 @@
 
   .nav-links.open {
     clip-path: circle(1400px at 90% -10%);
-    -webkit-clip-path: circle(1400px at 90% -1%);
+    -webkit-clip-path: circle(2200px at 90% -1%);
     pointer-events: all;
   }
 
@@ -192,6 +193,14 @@
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 1px 15px 15px rgba(0, 0, 0, 0.3);
+
+    .card-img img {
+      width: 90%;
+    }
+
+    .card-img img:hover {
+      width: 94%;
+    }
   }
   #guide {
     // height: 30vh;
@@ -244,15 +253,52 @@
 }
 
 @media screen and (max-width: 990px) {
-  .showcase-text a {
-    width: 70%;
-    text-align: center;
+  #showcase {
+    width: 80%;
+    grid-template-columns: 100%;
+
+    img {
+      display: none;
+    }
   }
 
-  .showcase-img img {
-    position: relative;
-    width: 200%;
-    height: 550px;
+  .showcase-content {
+    margin-top: 0rem;
+    margin-left: -2rem;
+    width: 100%;
+  }
+
+  .showcase-text h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 200%;
+  }
+
+  .showcase-text h3 {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    font-size: 100%;
+  }
+
+  .input-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem 0rem;
+    width: 100%;
+  }
+
+  .input-container input {
+    transition: all 0.3s ease-in-out;
+    padding: 1rem;
+    width: 90%;
+  }
+
+  .showcase-text a {
+    // width: 70%;
+    margin-top: 2rem;
+    margin-left: 8rem;
+    // justify-self: center;
+    // align-self: center;
   }
 
   #featured {
@@ -300,103 +346,63 @@
 }
 
 @media screen and (max-width: 799px) {
-  // .nav-toggle:checked ~ nav {
-  //   transform: scale(1, 1);
-  // }
-
-  // header {
-  //   z-index: 100;
-  // }
-
-  // nav {
-  //   position: fixed;
-  //   right: 0%;
-  //   background: #dffffa;
-  //   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
-  //   top: 0%;
-  //   height: 100%;
-  //   width: 50%;
-  // }
-
-  // nav ul {
-  //   display: flex;
-  //   flex-direction: column;
-  //   position: relative;
-  //   top: 5%;
-  //   left: 0%;
-  //   text-align: center;
-  //   font-size: 120%;
-  // }
-
-  // nav ul li {
-  //   line-height: 5;
-  //   display: block;
-  // }
-
-  // .logreg {
-  //   flex: 4;
-  //   font-size: 100%;
-  //   margin-top: -5%;
-  // }
-
   #showcase {
-    // height: 80vh;
-  }
-
-  .showcase-content {
-    margin-top: 10rem;
-  }
-
-  .showcase-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    line-height: 1.4;
-  }
-
-  .showcase-text h1 {
     width: 80%;
-    font-size: 200%;
-    margin: 1rem 0;
-  }
+    grid-template-columns: 100%;
+    height: 10vh;
 
-  .showcase-text h3 {
-    font-size: 100%;
-  }
+    .showcase-content {
+      margin-top: 0rem;
+      margin-left: -2rem;
+      width: 100%;
 
-  .input-container {
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 1rem;
-  }
+      img {
+        display: none;
+      }
+      .showcase-text {
+        h1 {
+          width: 100%;
+          text-align: center;
+          font-size: 600px;
+        }
 
-  .input-container input {
-    padding: 0.5rem;
-    width: 50%;
-  }
+        h3 {
+          width: 100%;
+          margin-left: 0;
+          text-align: center;
+          font-size: 100%;
+        }
 
-  .showcase-text a {
-    width: 50%;
-  }
+        .input-container {
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 2rem 0rem;
+          width: 100%;
+        }
 
-  .showcase-img img {
-    position: relative;
-    top: 10%;
-    right: 20%;
-    width: 110%;
-    height: 40%;
-  }
+        .input-container input {
+          transition: all 0.3s ease-in-out;
+          padding: 1rem;
+          width: 90%;
+        }
 
-  #new-way {
-    // height: 30vh;
+        a {
+          // width: 70%;
+          margin-top: 2rem;
+          margin-left: 8rem;
+          // justify-self: center;
+          // align-self: center;
+        }
+      }
+    }
   }
 
   .new-way-text {
-    max-width: 85%;
+    width: 85%;
     margin-left: 1rem;
   }
 
   .new-way-text h1 {
-    font-size: 200%;
+    font-size: 160%;
   }
   .new-way-text p {
     font-size: 90%;
@@ -407,16 +413,41 @@
     height: 350px;
   }
 
+  #featured {
+    width: 90%;
+  }
+
+  #featured .fh-text h2 {
+    flex: 70%;
+    font-size: 150%;
+  }
+
+  #featured .fh-text a {
+    font-size: 100%;
+  }
+
+  #featured .cards {
+    .card-img img {
+      width: 90%;
+      height: 220px;
+    }
+
+    .card-img img:hover {
+      width: 100%;
+    }
+    // grid-template-columns: repeat(1, 1fr);
+  }
+
   #guide {
-    // height: 3vh;
+    margin-top: 2rem;
   }
   .guide-text {
-    max-width: 85%;
+    width: 85%;
     margin-left: 2rem;
   }
 
   .guide-text h1 {
-    font-size: 200%;
+    font-size: 160%;
   }
   .guide-text p {
     font-size: 90%;
@@ -438,39 +469,15 @@
     right: 10%;
   }
 
-  #featured {
-    width: 100%;
-  }
-
-  #featured .fh-text h2 {
-    flex: 70%;
-    font-size: 150%;
-  }
-
-  #featured .fh-text a {
-    font-size: 100%;
-  }
-
-  #featured .cards {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
   #testimonial {
     width: 90%;
     height: 100%;
     margin: auto;
-    margin-bottom: 14rem;
-  }
-
-  .testimonial-content {
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin: auto;
+    margin-top: 2rem;
   }
 
   .testimonial-text {
-    max-width: 90%;
+    width: 90%;
     margin-left: 0rem;
   }
 
@@ -482,16 +489,14 @@
     font-size: 80%;
   }
 
-  .testimonial-img img {
-    position: relative;
-    width: 400px;
-    height: 400px;
-  }
-
   .testimonial-icon {
     width: 140px;
     bottom: 13%;
     left: 60%;
+  }
+
+  #trending {
+    margin-top: 4rem;
   }
 
   .trending-text h2 {
@@ -505,8 +510,8 @@
 
   .trending-card-container .cards {
     grid-template-columns: repeat(1, 1fr);
-    max-width: 100%;
-    grid-gap: 6rem 5rem;
+    width: 100%;
+    grid-gap: 4rem 0rem;
   }
 
   #footer .footer-top {
@@ -526,12 +531,110 @@
   }
 
   #footer hr {
-    margin: 4rem 2rem 2rem 2rem;
-    width: 80%;
+    margin-top: 3rem;
+    margin-left: 1rem;
+    width: 98%;
   }
 }
 
 @media screen and (max-width: 599px) {
+  body {
+    display: none;
+  }
+  #showcase {
+    width: 80%;
+    grid-template-columns: 100%;
+
+    img {
+      display: none;
+    }
+
+    .showcase-content {
+      margin-top: 0rem;
+      margin-left: -2rem;
+      width: 100%;
+
+      .showcase-text {
+        h1 {
+          width: 100%;
+          text-align: center;
+          font-size: 200%;
+        }
+        h3 {
+          width: 100%;
+          margin-left: 0;
+          text-align: center;
+          font-size: 100%;
+        }
+
+        .input-container {
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 2rem 0rem;
+          width: 100%;
+        }
+
+        .input-container input {
+          transition: all 0.3s ease-in-out;
+          padding: 1rem;
+          width: 90%;
+        }
+
+        a {
+          // width: 70%;
+          margin-top: 2rem;
+          margin-left: 8rem;
+          // justify-self: center;
+          // align-self: center;
+        }
+      }
+    }
+  }
+  #new-way {
+    img {
+      display: none;
+    }
+
+    .new-way-content {
+      grid-template-columns: 100%;
+
+      h1 {
+        font-size: 140%;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  #guide {
+    img {
+      display: none;
+    }
+
+    .guide-content {
+      grid-template-columns: 100%;
+
+      h1 {
+        font-size: 140%;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  #featured .cards {
+    grid-template-columns: 100%;
+
+    .card-img img {
+      height: 300px;
+      width: 100%;
+      user-select: none;
+    }
+  }
+
+  .card-img img:hover {
+    height: 300px;
+    width: 100%;
+    user-select: none;
+  }
+
   #featured .fh-text h2 {
     flex: 50%;
     font-size: 120%;
@@ -541,11 +644,12 @@
     font-size: 100%;
   }
 
+  .testimonial-content {
+    grid-template-columns: 100%;
+  }
+
   .testimonial-img img {
-    position: relative;
-    top: 50%;
-    width: 100%;
-    height: 100%;
+    display: none;
   }
 
   .testimonial-icon {
@@ -586,22 +690,12 @@
 }
 
 @media screen and (max-width: 499px) {
-  nav {
-    width: 100%;
-    height: 100%;
-    /* font-size: 200%; */
-  }
-  .logreg {
-    display: none;
-  }
+  // nav {
+  //   width: 100%;
+  //   height: 100%;
+  //   /* font-size: 200%; */
+  // }
 
-  #showcase::before {
-    position: relative;
-    top: 0;
-    left: 0;
-    content: "";
-    background: url(../img/hero-1.png) no-repeat center center/cover;
-  }
   #showcase {
     /* position: relative; */
     width: 100%;
@@ -651,9 +745,6 @@
     display: none;
   }
 
-  #guide {
-    // height: 0vh;
-  }
   .guide-content {
     /* position: relative; */
     grid-template-columns: repeat(1, 1fr);
@@ -701,11 +792,5 @@
   #footer hr {
     margin: 4rem 2rem 2rem 2rem;
     width: 80%;
-  }
-}
-
-@media screen and(min-height:1800px) {
-  body {
-    display: none;
   }
 }

@@ -48,6 +48,7 @@ nav {
 .logreg {
   display: flex;
   flex: 1;
+  // padding-top: 1rem;
 }
 
 .nav-btn {
@@ -171,8 +172,9 @@ nav li a {
 .showcase-text a {
   display: flex;
   justify-content: center;
-  width: 70%;
+  width: 40%;
   text-align: center;
+  margin-top: 3rem;
 }
 
 .showcase-img img {
@@ -332,7 +334,7 @@ nav li a {
 #featured .cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  max-width: 100%;
+  width: 100%;
 }
 
 #featured .cards .card {
@@ -364,7 +366,7 @@ nav li a {
 
 #featured .card-img img:hover {
   width: 90%;
-  height: 350px;
+  height: 330px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -391,7 +393,7 @@ nav li a {
   justify-content: center;
   text-align: left;
   line-height: 2;
-  max-width: 70%;
+  width: 70%;
   margin-left: 6rem;
 }
 
@@ -459,11 +461,15 @@ nav li a {
   font-size: 2rem;
 }
 
-.testimonial-img img {
+.testimonial-img {
   position: relative;
-  width: 90%;
-  height: 100%;
-  border-radius: 30px;
+
+  img {
+    // position: relative;
+    width: 90%;
+    height: 100%;
+    border-radius: 30px;
+  }
 }
 
 #testimonial .circle-9 {
@@ -671,7 +677,7 @@ nav li a {
 }
 
 #footer hr {
-  margin: auto;
+  margin-left: 9rem;
   margin-top: 2rem;
   width: 80%;
 }
