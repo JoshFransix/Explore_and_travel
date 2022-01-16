@@ -688,16 +688,21 @@ nav li a {
   width: 80%;
 }
 
+#footer .footer-icons {
+  // margin: auto;
+  width: 40%;
+}
+
 #footer .footer-icons ul {
   /* background: red; */
   padding: 2rem;
 
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 #footer .footer-icons ul li a {
-  margin-left: 2rem;
+  // margin-left: 2rem;
 }
 
 #footer .footer-icons ul li a i {
