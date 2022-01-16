@@ -685,20 +685,9 @@
     width: 100%;
 
     .new-way-text {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: left;
-      line-height: 2;
-      width: 70%;
-      margin-left: 6rem;
+      width: 9%;
+      margin-left: -3rem;
     }
-  }
-
-  .new-way-content {
-    /* position: relative; */
-    grid-template-columns: repeat(1, 1fr);
-    font-size: 100%;
   }
 
   .new-way-img img {
