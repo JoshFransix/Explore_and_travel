@@ -316,11 +316,11 @@
     height: 400px;
   }
 
-  .testimonial-icon {
-    width: 140px;
-    bottom: 13%;
-    left: 60%;
-  }
+  // .testimonial-icon {
+  //   width: 140px;
+  //   bottom: 13%;
+  //   left: 60%;
+  // }
 
   .guide-img img {
     position: relative;
@@ -485,11 +485,11 @@
     font-size: 80%;
   }
 
-  .testimonial-icon {
-    width: 140px;
-    bottom: 13%;
-    left: 60%;
-  }
+  // .testimonial-icon {
+  //   width: 140px;
+  //   bottom: 13%;
+  //   left: 60%;
+  // }
 
   #trending {
     margin-top: 4rem;
@@ -633,12 +633,6 @@
     padding-top: 2rem;
     .testimonial-content {
       grid-template-columns: 100%;
-
-      .testimonial-icon {
-        width: 140px;
-        bottom: 10%;
-        left: 20%;
-      }
     }
   }
 
