@@ -630,9 +630,15 @@
   }
 
   #testimonial {
-    padding-top: 2rem;
+    padding-top: 6rem;
     .testimonial-content {
       grid-template-columns: 100%;
+
+      .testimonial-text {
+        .stars {
+          margin-top: 1rem;
+        }
+      }
     }
   }
 
@@ -650,6 +656,7 @@
     flex-direction: column;
     justify-content: center;
     width: 95%;
+    margin-left: 0;
   }
 
   .f-logo-container h4 {
@@ -724,24 +731,26 @@
     width: 90%;
   }
 
-  #footer .footer-top {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 95%;
-  }
+  #footer {
+    .footer-top {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 95%;
+    }
 
-  .f-logo-container h4 {
-    width: 100%;
-  }
+    .f-logo-container h4 {
+      width: 100%;
+    }
 
-  .f-logo-container h5 {
-    margin: 2rem 0;
-    width: 100%;
-  }
+    .f-logo-container h5 {
+      margin: 2rem 0;
+      width: 100%;
+    }
 
-  #footer hr {
-    margin: 4rem 2rem 2rem 2rem;
-    width: 80%;
+    hr {
+      margin: 4rem 2rem 2rem 2rem;
+      width: 80%;
+    }
   }
 }
