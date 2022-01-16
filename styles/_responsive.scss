@@ -737,6 +737,30 @@
 
   #trending {
     width: 90%;
+
+    .trending-card-container .card-text h3 {
+      font-size: 19px;
+      margin-bottom: 1rem;
+      width: 100%;
+    }
+    .trending-card-container .card-text h4 {
+      font-size: 15px;
+      margin-bottom: 1rem;
+      line-height: 2;
+      width: 100%;
+    }
+
+    // .trending-card-container .card-3 h3,
+    // .trending-card-container .card-4 h3 {
+    //   width: 90%;
+    // }
+
+    .trending-card-container .card-img img {
+      /* position: relative; */
+      width: 250px;
+      height: 300px;
+      border-radius: 10px;
+    }
   }
 
   #footer {
