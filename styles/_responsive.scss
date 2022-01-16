@@ -685,18 +685,17 @@
 @media screen and (max-width: 499px) {
   #header {
     padding: 0 1rem;
-    .logo {
-      // flex: 2;
-      width: 100%;
-      height: 100%;
-      // padding-top: 1rem;
-      align-items: center;
+    .logreg {
+      .nav-btn {
+        margin-left: 0.3rem;
+      }
+
+      .btn {
+        padding: 0.4rem 1rem;
+      }
     }
   }
 
-  .nav-btn {
-    // margin-left: 1rem;
-  }
   #showcase {
     margin-top: 5rem;
   }
