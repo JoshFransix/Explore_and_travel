@@ -689,7 +689,7 @@ nav li a {
 }
 
 #footer .footer-icons {
-  // margin: auto;
+  margin: auto;
   width: 40%;
 }
 
@@ -701,16 +701,12 @@ nav li a {
   justify-content: space-between;
 }
 
-#footer .footer-icons ul li a {
-  // margin-left: 2rem;
-}
-
 #footer .footer-icons ul li a i {
   color: #000;
 }
 
 #footer .footer-text {
-  margin: 0.5rem 0;
+  margin-top: 1rem;
   text-align: center;
 
   a {
