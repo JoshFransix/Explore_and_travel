@@ -629,18 +629,17 @@
     font-size: 100%;
   }
 
-  .testimonial-content {
-    grid-template-columns: 100%;
-  }
+  #testimonial {
+    padding-top: 2rem;
+    .testimonial-content {
+      grid-template-columns: 100%;
 
-  .testimonial-img img {
-    // display: none;
-  }
-
-  .testimonial-icon {
-    width: 140px;
-    bottom: 10%;
-    left: 20%;
+      .testimonial-icon {
+        width: 140px;
+        bottom: 10%;
+        left: 20%;
+      }
+    }
   }
 
   #trending .trending-text h2 {
