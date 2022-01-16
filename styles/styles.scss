@@ -13,14 +13,20 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  overflow-x: hidden !important;
+  font-family: "Poppins", sans-serif;
+  width: 100vw;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
 img {
   user-select: none;
   pointer-events: none;
-}
-
-body {
-  // overflow-x: hidden;
-  font-family: "Poppins", sans-serif;
 }
 
 a {
