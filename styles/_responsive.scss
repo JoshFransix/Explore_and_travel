@@ -732,11 +732,13 @@
   }
 
   #footer {
+    padding: 2rem 0;
     .footer-top {
       display: flex;
       flex-direction: column;
       justify-content: center;
       width: 95%;
+      margin-left: 1.5rem;
     }
 
     .f-logo-container h4 {
@@ -751,6 +753,11 @@
     hr {
       margin: 4rem 2rem 2rem 2rem;
       width: 80%;
+    }
+
+    .footer-icons {
+      margin: 0;
+      padding: 0;
     }
   }
 }
