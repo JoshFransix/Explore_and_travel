@@ -678,8 +678,8 @@ nav li a {
 }
 #footer .footer-top ul li a:hover {
   transition: all 0.3s ease-in-out;
-  color: #202336;
-  font-weight: bold;
+  color: var(--primary-color);
+  // font-weight: bold;
 }
 
 #footer hr {
