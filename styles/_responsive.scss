@@ -296,7 +296,7 @@
   .showcase-text a {
     // width: 70%;
     margin-top: 2rem;
-    margin-left: 8rem;
+    margin-left: 0rem;
     // justify-self: center;
     // align-self: center;
   }
@@ -346,6 +346,9 @@
 }
 
 @media screen and (max-width: 799px) {
+  body {
+    display: none;
+  }
   #showcase {
     width: 80%;
     grid-template-columns: 100%;
@@ -575,7 +578,7 @@
         a {
           // width: 70%;
           margin-top: 2rem;
-          margin-left: 8rem;
+          margin-left: 0rem;
           // justify-self: center;
           // align-self: center;
         }
