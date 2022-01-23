@@ -12,7 +12,6 @@ hamburger.addEventListener("click", mobileMenu);
 
 function mobileMenu() {
   hamburger.classList.toggle("hamburger-open");
-  // body.classList.toggle("lock-scroll");
   navMenu.classList.toggle("open");
 
   navLinks.forEach((navLinks) => {
